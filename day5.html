@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+       /* 전체 셀렉터*/
+       *{
+          padding: 0px;
+          margin: 0px;
+       }
+       div>div
+       #div1 div
+       {
+         background-color: aqua;
+         display: inline;
+       }
+       #div2 div{
+        background-color: powderblue;
+        /*border의 바깥 영역에 10px이 여백, 사방으로 */
+        display: inline-block;
+        border: 2px dotted orangered;
+        margin: 10px;
+        width: 60px;
+        height: 80px;
+       }
+        /*태그 이름 셀렉터*/
+
+        span{
+            background-color: aqua;
+            display: block;
+            width: 100px;
+            height: 60px;
+
+        }
+    </style>
+</head>
+<body>
+    <div  id= "div1" style="background-color: orange;">
+         <div>inline-block DIV</div>
+         <div>inline-block DIV</div>
+         <div>inline-block DIV</div>
+         </div>
+    <div style="background-color: orange;"></div>
+        <div>inline DIV</div>
+        <div>inline DIV</div>
+        <div>inline DIV</div>
+    </div>
+    <div>
+        <span>block span</span>과
+        <span>block span</span>입니다.
+    </div>
+</body>
+</html>
